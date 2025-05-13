@@ -17,7 +17,13 @@ const resources = {
       'french': 'French',
       'spanish': 'Spanish',
       'arabic': 'Arabic',
-      
+      about: {
+          title: "About MultiLingua",
+          mission: {
+            title: "Our Mission",
+            content: "MultiLingua
+          }   
+      }
       // Subject names
       'technology': 'Technology',
       'science': 'Science',
