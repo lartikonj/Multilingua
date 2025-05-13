@@ -6,11 +6,11 @@ const resources = {
   en: {
     translation: {
       // Navigation
-      'nav.home': 'Home',
-      'nav.about': 'About',
-      'nav.popular': 'Popular',
-      'nav.recent': 'Recent',
-      'nav.subjects': 'Subjects',
+      'home': 'Home',
+      'subjects': 'Subjects',
+      'popular': 'Popular',
+      'recent': 'Recent',
+      'about': 'About',
       
       // Language names
       'english': 'English',
@@ -19,6 +19,11 @@ const resources = {
       'arabic': 'Arabic',
       
       // About page
+      'about': {
+        'title': 'About MultiLingua',
+        'mission': {
+          'title': 'Our Mission',
+          'content': 'MultiLingua bridges language barriers by providing high-quality educational content in multiple languages, making knowledge accessible to all.'
         },
         'values': {
           'accessibility': 'Make knowledge accessible to everyone',
