@@ -12,7 +12,7 @@ export default function About() {
     <Layout>
       <div className="container mx-auto px-4 py-8">
         <Breadcrumb items={[
-          { name: t('About'), href: "/about" }
+          { name: t('nav.about'), href: "/about" }
         ]} />
         
         <div className="max-w-4xl mx-auto">
