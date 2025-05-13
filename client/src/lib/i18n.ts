@@ -6,11 +6,11 @@ const resources = {
   en: {
     translation: {
       // Navigation
-      'home': 'Home',
-      'subjects': 'Subjects',
-      'popular': 'Popular',
-      'recent': 'Recent',
-      'about': 'About',
+      'nav.home': 'Home',
+      'nav.subjects': 'Subjects',
+      'nav.popular': 'Popular',
+      'nav.recent': 'Recent',
+      'nav.about': 'About',
       
       // Language names
       'english': 'English',
@@ -119,11 +119,11 @@ const resources = {
   fr: {
     translation: {
       // Navigation
-      'home': 'Accueil',
-      'subjects': 'Sujets',
-      'popular': 'Populaire',
-      'recent': 'Récent',
-      'about': 'À propos',
+      'nav.home': 'Accueil',
+      'nav.subjects': 'Sujets',
+      'nav.popular': 'Populaire',
+      'nav.recent': 'Récent',
+      'nav.about': 'À propos',
       
       // Language names
       'english': 'Anglais',
@@ -155,11 +155,11 @@ const resources = {
   es: {
     translation: {
       // Navigation
-      'home': 'Inicio',
-      'subjects': 'Temas',
-      'popular': 'Popular',
-      'recent': 'Reciente',
-      'about': 'Acerca de',
+      'nav.home': 'Inicio',
+      'nav.subjects': 'Temas',
+      'nav.popular': 'Popular',
+      'nav.recent': 'Reciente',
+      'nav.about': 'Acerca de',
       
       // Language names
       'english': 'Inglés',
@@ -183,11 +183,11 @@ const resources = {
   ar: {
     translation: {
       // Navigation
-      'home': 'الرئيسية',
-      'subjects': 'المواضيع',
-      'popular': 'شائع',
-      'recent': 'حديث',
-      'about': 'حول',
+      'nav.home': 'الرئيسية',
+      'nav.subjects': 'المواضيع',
+      'nav.popular': 'شائع',
+      'nav.recent': 'حديث',
+      'nav.about': 'حول',
       
       // Language names
       'english': 'الإنجليزية',
