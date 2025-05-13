@@ -34,10 +34,11 @@ export default function Header() {
 
   // Navigation items
   const navItems: NavItem[] = [
-    { label: "Home", href: "/", translationKey: "home", isActive: location === "/" },
-    { label: "Popular", href: "/popular", translationKey: "popular", isActive: location === "/popular" },
-    { label: "Recent", href: "/recent", translationKey: "recent", isActive: location === "/recent" },
-    { label: "About", href: "/about", translationKey: "about", isActive: location === "/about" },
+    { label: "Home", href: "/", translationKey: "nav.home" },
+    { label: "Popular", href: "/popular", translationKey: "nav.popular" },
+    { label: "Recent", href: "/recent", translationKey: "nav.recent" },
+    { label: "About", href: "/about", translationKey: "nav.about" },  // <-- Changed
+    { label: "Subjects", href: "/subjects", translationKey: "nav.subjects" }
   ];
 
   // Subjects for dropdown
