@@ -19,11 +19,6 @@ const resources = {
       'arabic': 'Arabic',
       
       // About page
-      'about': {
-        'title': 'About MultiLingua',
-        'mission': {
-          'title': 'Our Mission',
-          'content': 'MultiLingua bridges language barriers by providing high-quality educational content in multiple languages, making knowledge accessible to all.'
         },
         'values': {
           'accessibility': 'Make knowledge accessible to everyone',
