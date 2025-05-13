@@ -281,27 +281,7 @@ export class MemStorage implements IStorage {
         availableLanguages: ["en", "es", "fr", "ar"],
         featured: false
       }
-      {
-        title: "Why Learn Languages in 2025?",
-        slug: "why-learn-languages-2025",
-        excerpt: "In 2025, mastering languages is more crucial than ever. Multilingual skills open doors to opportunities worldwide.",
-        content: "In 2025, mastering languages is more crucial than ever. With global markets expanding and remote work becoming standard, multilingual skills open doors to opportunities worldwide. Learning a new language improves your brain, your career, and your connection to others.",
-        imageUrl: "https://images.unsplash.com/photo-1584697964154-818ded3dc65c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
-        readTime: 4,
-        subjectId: 9,
-        author: "Multilingua Team",
-        authorImage: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200",
-        publishDate: new Date("2025-05-01"),
-        translations: {
-          fr: {
-            title: "Pourquoi apprendre des langues en 2025 ?",
-            excerpt: "En 2025, maîtriser les langues est plus important que jamais. Parler plusieurs langues ouvre des portes dans le monde entier.",
-            content: "En 2025, maîtriser les langues est plus important que jamais. Avec l'expansion des marchés mondiaux et le travail à distance devenu la norme, parler plusieurs langues ouvre des portes dans le monde entier. Apprendre une nouvelle langue améliore votre cerveau, votre carrière et vos relations humaines."
-          }
-        },
-        availableLanguages: ["en", "fr"],
-        featured: true
-      },
+      
     ];
     
     articles.forEach(article => {
