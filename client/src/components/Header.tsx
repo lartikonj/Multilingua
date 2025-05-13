@@ -109,24 +109,8 @@ export default function Header() {
               )
             ))}
             
-            {/* Subjects dropdown */}
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <button className="flex items-center font-medium text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 gap-1">
-                  {t('subjects')}
-                  <ChevronDown className="h-4 w-4" />
-                </button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="center">
-                {subjects.map((subject) => (
-                  <DropdownMenuItem key={subject.slug} asChild>
-                    <Link href={`/subject/${subject.slug}`} className="w-full cursor-pointer">
-                      {t(subject.translationKey)}
-                    </Link>
-                  </DropdownMenuItem>
-                ))}
-              </DropdownMenuContent>
-            </DropdownMenu>
+            
+          
           </nav>
 
           {/* User controls */}
