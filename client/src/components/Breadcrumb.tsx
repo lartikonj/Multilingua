@@ -3,8 +3,8 @@ import { ChevronRight, Home } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 export interface BreadcrumbItem {
-  name?: string;          // Either provide name
-  translationKey?: string; // Or translationKey
+  name?: string;
+  translationKey?: string;
   href?: string;
 }
 
@@ -15,13 +15,21 @@ interface BreadcrumbProps {
 export default function Breadcrumb({ items }: BreadcrumbProps) {
   const { t } = useTranslation();
   
-  const getItemName = (item: BreadcrumbItem) => {
+  const getDisplayName = (item: BreadcrumbItem): string => {
+    // Return name if provided
+    if (item.name) return item.name;
+    
+    // Handle translation key
     if (item.translationKey) {
-      // Safety check in case translation returns an object
-      const translation = t(item.translationKey);
-      return typeof translation === 'string' ? translation : item.translationKey;
+      const translated = t(item.translationKey);
+      if (typeof translated === 'string') {
+        return translated;
+      }
+      console.warn(`Translation key "${item.translationKey}" returned non-string value`);
+      return item.translationKey; // Fallback to key
     }
-    return item.name || '';
+    
+    return ''; // Fallback for empty items
   };
 
   return (
@@ -43,11 +51,11 @@ export default function Breadcrumb({ items }: BreadcrumbProps) {
                   href={item.href} 
                   className="hover:text-primary-600 dark:hover:text-primary-400"
                 >
-                  {getItemName(item)}
+                  {getDisplayName(item)}
                 </Link>
               ) : (
                 <span className="text-gray-700 dark:text-gray-300">
-                  {getItemName(item)}
+                  {getDisplayName(item)}
                 </span>
               )}
             </div>
