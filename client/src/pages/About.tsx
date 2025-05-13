@@ -14,26 +14,19 @@ export default function About() {
         ]} />
         
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-3xl font-bold mb-6">{t('about.title')}</h1>
+          <h1 className="text-3xl font-bold mb-6">{t('About MultiLingua')}</h1>
           
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4">{t('about.mission.title')}</h2>
+            <h2 className="text-2xl font-semibold mb-4">{t('Our Mission')}</h2>
             <p className="text-lg text-gray-700 dark:text-gray-300 mb-4">
-              {t('about.mission.content')}
+              {t('At MultiLingua, we break down language barriers to make knowledge universally accessible. We empower learners worldwide by providing high-quality educational content across multiple languages, helping bridge cultural divides through the power of shared understanding.')}
             </p>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4">{t('about.team.title')}</h2>
+            <h2 className="text-2xl font-semibold mb-4">{t('Join our movement')}</h2>
             <p className="text-lg text-gray-700 dark:text-gray-300 mb-4">
-              {t('about.team.content')}
-            </p>
-          </section>
-
-          <section className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4">{t('about.technology.title')}</h2>
-            <p className="text-lg text-gray-700 dark:text-gray-300 mb-4">
-              {t('about.technology.content')}
+              {t("to make knowledge borderless. Whether you are reading, contributing, or translating, you're helping build a more connected, polyglot world.")}
             </p>
           </section>
         </div>
