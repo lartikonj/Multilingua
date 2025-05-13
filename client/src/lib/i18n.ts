@@ -6,11 +6,11 @@ const resources = {
   en: {
     translation: {
       // Navigation
-      'home': 'Home',
-      'subjects': 'Subjects',
-      'popular': 'Popular',
-      'recent': 'Recent',
-      'about': 'About',
+      'nav.home': 'Home',
+      'nav.about': 'About',
+      'nav.popular': 'Popular',
+      'nav.recent': 'Recent',
+      'nav.subjects': 'Subjects',
       
       // Language names
       'english': 'English',
