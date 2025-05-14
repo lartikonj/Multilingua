@@ -8,9 +8,11 @@ import { format } from "date-fns";
 
 interface ArticleCardProps {
   article: Article;
+  subjectSlug: string;
   variant?: "default" | "horizontal" | "featured";
   showAuthor?: boolean;
 }
+
 
 export default function ArticleCard({ 
   article, 
