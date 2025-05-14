@@ -30,6 +30,9 @@ export default function ArticlePage() {
   const translation = article?.translations[language as keyof typeof article.translations] || 
                      article?.translations.en;
   const [match, params] = useRoute("/subject/:subjectSlug/:articleSlug");
+  const [match, params] = useRoute("/subject/:subjectSlug");
+  const subjectSlug = params?.subjectSlug;
+
   if (!match) return <NotFound />;
   const { subjectSlug, articleSlug } = params;
   return (
