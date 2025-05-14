@@ -29,11 +29,9 @@ export default function ArticlePage() {
   const translation = article?.translations[language as keyof typeof article.translations] || 
                      article?.translations.en;
   const [match, params] = useRoute("/subject/:subjectSlug/:slug");
-  const slug = params?.slug || "";
-  const subjectSlug = params?.subjectSlug;
-
-
+  
   if (!match) return <NotFound />;
+  const { subjectSlug, slug } = params!;
   return (
     <Layout>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
