@@ -30,7 +30,9 @@ export default function ArticlePage() {
   // Get the appropriate translation or fall back to English
   const translation = article?.translations[language as keyof typeof article.translations] || 
                      article?.translations.en;
-  
+  const [match, params] = useRoute("/subject/:subjectSlug/:articleSlug");
+  if (!match) return <NotFound />;
+  const { subjectSlug, articleSlug } = params;
   return (
     <Layout>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
