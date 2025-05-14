@@ -16,6 +16,7 @@ interface ArticleCardProps {
 
 export default function ArticleCard({ 
   article, 
+  subjectSlug,
   variant = "default",
   showAuthor = false
 }: ArticleCardProps) {
