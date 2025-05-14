@@ -33,7 +33,6 @@ export default function ArticlePage() {
   const subjectSlug = params?.subjectSlug;
 
   if (!match) return <NotFound />;
-  const { subjectSlug, articleSlug } = params;
   return (
     <Layout>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
