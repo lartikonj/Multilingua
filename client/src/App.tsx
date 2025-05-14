@@ -1,4 +1,9 @@
-// client/src/App.tsx 
+// client/src/App.tsx <Route path="/subject/:subjectSlug/:slug" component={ArticlePage} />
+     // <Route path="/subject/:subjectSlug/:articleSlug" component={Article} />
+  //    <Route path="/subject/:slug" component={Subject} />
+   //   <Route path="/article/:slug" component={Article} />
+   //   <Route path="/about" component={About} />
+   //   <Route component={NotFound} />
 import { Switch, Route } from "wouter";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -12,12 +17,7 @@ function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
-      <Route path="/subject/:subjectSlug/:slug" component={ArticlePage} />
-      <Route path="/subject/:subjectSlug/:articleSlug" component={Article} />
-      <Route path="/subject/:slug" component={Subject} />
-      <Route path="/article/:slug" component={Article} />
-      <Route path="/about" component={About} />
-      <Route component={NotFound} />
+      
     </Switch>
   );
 }
