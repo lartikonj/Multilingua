@@ -11,7 +11,6 @@ import { useLanguage } from "@/providers/LanguageProvider";
 export default function ArticlePage() {
   const { t } = useTranslation();
   const { language } = useLanguage();
-  const [, params] = useRoute<{ slug: string }>("/article/:slug");
   const slug = params?.slug || "";
   
   // Fetch article data
