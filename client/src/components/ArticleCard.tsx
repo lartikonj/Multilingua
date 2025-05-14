@@ -112,7 +112,7 @@ export default function ArticleCard({
   
   // Default card
   return (
-    <Link href={`/subject/${subjectSlug}/${article.slug}`}>{article.title}</Link>
+    <Link href={`/subject/${subjectSlug}/${article.slug}`}>
       <div className="bg-white dark:bg-gray-900 rounded-xl shadow-sm overflow-hidden border border-gray-200 dark:border-gray-800 transition-all hover:shadow-md hover:border-primary-400 dark:hover:border-primary-600 cursor-pointer">
         <img 
           src={article.imageUrl} 
@@ -140,4 +140,5 @@ export default function ArticleCard({
       </div>
     </Link>
   );
+
 }
