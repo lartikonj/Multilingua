@@ -12,11 +12,11 @@ function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
+      <Route path="/subject/:subjectSlug/:slug" component={ArticlePage} />
       <Route path="/subject/:slug" component={Subject} />
       <Route path="/article/:slug" component={Article} />
       <Route path="/about" component={About} />
       <Route component={NotFound} />
-      <Route path="/subject/:subjectSlug/:slug" component={ArticlePage} />
     </Switch>
   );
 }
